@@ -1,52 +1,84 @@
 function kilometerToMeter(kilometer)
 {
-    meter = kilometer * 1000;
-
-    return meter;
+    if (kilometer <= 0)
+    {
+        
+        return "Incorrect Input";
+    }
+    else
+    {
+        meter = kilometer * 1000;
+    
+        return meter;
+   
+    }
+     
 }
 
-console.log(kilometerToMeter(600),"meters")
+console.log(kilometerToMeter(2))
 
 
 function budgetCalculator(watch, mobile, laptop)
 {
-    var watch = 50 * watch;
-    var mobile = 100 * mobile;
-    var laptop = 500 * laptop;
+    if (watch <0 || mobile<0 || laptop<0)
+    {
+       
+    return "Incorrect Value";
+
+    }
+    
+    else
+    {
+    var watchPrice = 50;
+    watch= watchPrice * watch;
+    var mobilePrice = 100;
+    mobile = mobilePrice * mobile;
+    var laptopPrice = 500;
+    laptop = laptopPrice * laptop;
 
     totalBudget = watch + mobile + laptop;
 
     return totalBudget;
+
+    }
+      
+
 }
 
-console.log(budgetCalculator(10,10,6),"usd");
+
+console.log(budgetCalculator(2,10,2));
 
 
 function hotelCost(days)
 {
     var rent = 100;
-     if (days <= 10)
-     {
+    if (days <= 0)
+    {
+        return "Invalid Value Inserted";
+    }
+
+    if (days <= 10)
+    {
         
-       return rent * days;
+    return rent * days;
 
     }
     if (days > 10)
     {
-        rent = 80;
+    rent = 80;
 
-        discountRate = rent * (days - 10);
+    discountRate = rent * (days - 10);
         
-        regulfriendsate = 100 * 10;
+    regulfriendsate = 100 * 10;
 
-        specialRate = regulfriendsate + discountRate;
+    specialRate = regulfriendsate + discountRate;
 
-        return specialRate;
+    return specialRate;
 
     }
    
 }
-console.log(hotelCost(9));
+console.log(hotelCost(15));
 
 
 function megaFriend(name) {
