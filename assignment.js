@@ -1,3 +1,7 @@
+//  https://github.com/ash1814/assignment.js
+
+// ------kilometerToMeter--------------//
+
 function kilometerToMeter(kilometer)
 {
     if (kilometer <= 0)
@@ -17,6 +21,9 @@ function kilometerToMeter(kilometer)
 
 console.log(kilometerToMeter(2))
 
+//-----------------End-----------------------//
+
+// ------budgetCalculator--------------//
 
 function budgetCalculator(watch, mobile, laptop)
 {
@@ -48,6 +55,9 @@ function budgetCalculator(watch, mobile, laptop)
 
 console.log(budgetCalculator(2,10,2));
 
+//-----------------End-----------------------//
+
+// ------hotelCost--------------//
 
 function hotelCost(days)
 {
@@ -69,9 +79,9 @@ function hotelCost(days)
 
     discountRate = rent * (days - 10);
         
-    regulfriendsate = 100 * 10;
+    regularRate = 100 * 10;
 
-    specialRate = regulfriendsate + discountRate;
+    specialRate = regularRate + discountRate;
 
     return specialRate;
 
@@ -80,6 +90,10 @@ function hotelCost(days)
 }
 console.log(hotelCost(15));
 
+//-----------------End-----------------------//
+
+
+// ------megaFriend--------------//
 
 function megaFriend(name) {
   var longestName = name[0];
@@ -94,3 +108,5 @@ function megaFriend(name) {
 var persons = ['Donald', 'Trump', 'Joe', 'Biden', 'JohnCena', 'Kamalaaaaaaaaaaaaa', 'Hariss'];
 
 console.log(megaFriend(persons));
+
+//-----------------End-----------------------//
